@@ -1,0 +1,41 @@
+[
+    {"name":"Vad för typ av värde kännetecknar en boolean?", 
+    "questions":["Siffror", "Text", "Sant/Falskt", "Decimaler"], 
+    "correctAnswerIndex":2},
+
+    {"name":"Vad gör denna kod?<br/>while(true){<br/><br/>}", 
+    "questions":["Spränger datorn", "Kör \"ingenting\" så länge som möjligt", "Hackar in i NASAs databas", "Knäcker folks lösenord"], 
+    "correctAnswerIndex":1},
+
+    {"name":"Vilket alternativ beskriver bäst en array?", 
+    "questions":["En krypteringsalgoritm", "En databas", "En operatör", "En lista"], 
+    "correctAnswerIndex":3},
+
+    {"name":"Vad blir \"1\" + \"1\"?", 
+    "questions":["2", "101", "11", "1"], 
+    "correctAnswerIndex":2},
+
+    {"name":"Vad kommer att stå i datorns konsoll efter att denna kod körts?<br/>let name;<br/>console.log(name);", 
+    "questions":["undefined", "name", "null", "10110101"], 
+    "correctAnswerIndex":0},
+
+    {"name":"Vad kommer detta uttryck att ge för värde?<br/>\"1\" == true", 
+    "questions":["Error", "true", "false", "NaN"], 
+    "correctAnswerIndex":1},
+
+    {"name":"Hur kan man ändra denna variabelns värde?<br/>const id = 201345;", 
+    "questions":["id = \"nytt värde\"", "id.setValue(\"nytt värde\")", "setValue(id, \"nytt värde\")", "Det går inte att ändra värdet"], 
+    "correctAnswerIndex":3},
+
+    {"name":"Om man trycker på en knapp på en webbsida, trycker man då egentligen på knappen?", 
+    "questions":["Nej, man trycker på musknappen...Döööh", "eeehh.. ja?", "Jag förstår inte frågan", "Jag trodde detta handlade om programmering, inte filosofi"], 
+    "correctAnswerIndex":0},
+
+    {"name":"Vad står SEO för?", 
+    "questions":["Single entity object", "Search engine optimisation", "Start evaluation offer", "Speed engine orientation"], 
+    "correctAnswerIndex":1},
+
+    {"name":"Om ett program kraschar, kommer det till himmelen?", 
+    "questions":["Nej, gud kan inte koda", "Nej, himmelen saknar en nätverksport", "Ja, över \"molnet\"", "Ja, så länge man lägger till det som ett exception i ett catch block"], 
+    "correctAnswerIndex":3}
+]

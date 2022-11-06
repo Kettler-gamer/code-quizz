@@ -1,0 +1,37 @@
+<section class="content-question">
+  <h2 class="question-title">{{questionTitle}}</h2>
+  <ul class="question-list">
+    <li class="list-item">
+      <input
+        {{checked}}
+        class="item-checkbox"
+        type="radio"
+        name="choice"
+        onclick="onChoiceClick(0)" /><span class="item-text">{{answer1}}</span>
+    </li>
+    <li class="list-item">
+      <input
+        {{checked}}
+        class="item-checkbox"
+        type="radio"
+        name="choice"
+        onclick="onChoiceClick(1)" /><span class="item-text">{{answer2}}</span>
+    </li>
+    <li class="list-item">
+      <input
+        {{checked}}
+        class="item-checkbox"
+        type="radio"
+        name="choice"
+        onclick="onChoiceClick(2)" /><span class="item-text">{{answer3}}</span>
+    </li>
+    <li class="list-item">
+      <input
+        {{checked}}
+        class="item-checkbox"
+        type="radio"
+        name="choice"
+        onclick="onChoiceClick(3)" /><span class="item-text">{{answer4}}</span>
+    </li>
+  </ul>
+</section>

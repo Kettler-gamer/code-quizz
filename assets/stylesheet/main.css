@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-color: #efa927;
+  padding: 2em 0;
+  box-shadow: 0 0 20px black;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.page-header .header-title {
+  color: #ffffff;
+  text-align: center;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.page-content .content-question {
+  background-color: #fa4040;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  border-radius: 1em;
+  padding: 2em 0;
+  margin: 2em auto;
+  box-shadow: 0 0 20px black;
+  width: 90%;
+}
+.page-content .content-question .question-title {
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 0 auto;
+}
+.page-content .content-question .question-list {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.page-content .content-question .question-list .list-item {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+.page-content .content-question .question-list .list-item .item-checkbox {
+  width: 1.5em;
+  height: 1.5em;
+  border: none;
+  accent-color: #178501;
+}
+.page-content .content-question .question-list .list-item .item-text {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 1em;
+  width: 80%;
+}
+.page-content .content-result {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  width: 90%;
+  background-image: linear-gradient(to bottom, #fa4040, #efa927);
+  padding: 6em 0;
+  margin: 1em auto;
+  border-radius: 1em;
+  box-shadow: 0 0 15px black;
+}
+.page-content .content-result p,
+.page-content .content-result .result-title {
+  margin: 2em 0;
+  text-align: center;
+  color: #fff;
+}
+.page-content .content-result .result-text {
+  font-size: 1.5rem;
+}
+.page-content .page-buttons {
+  background-color: #929292;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 1em;
+  box-shadow: 0 0 20px black;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-around;
+}
+.page-content .page-buttons button {
+  width: 6em;
+  height: 3em;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #efa927;
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0 0 20px black;
+}
+.page-content .page-buttons button:disabled {
+  background-image: linear-gradient(to bottom right, black, grey, black, grey, black, grey, black, grey, black, grey, black, grey, black, grey, black, grey);
+  color: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #68b9ef;
+  width: 100vw;
+}/*# sourceMappingURL=main.css.map */

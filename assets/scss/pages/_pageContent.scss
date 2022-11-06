@@ -1,0 +1,99 @@
+@use "../abstract/vars" as *;
+
+@keyframes fade-in {
+    from{opacity: 0; transform: translateX(-15px);}
+    to{opacity: 1; transform: translateX(0);}
+}
+
+.page-content{
+    .content-question{
+        background-color: $CQuestionBackground;
+        animation-name: fade-in;
+        animation-duration: 1.5s;
+        border-radius: 1em;
+        padding: 2em 0;
+        margin: 2em auto;
+        box-shadow: 0 0 20px black;
+        width: 90%;
+        .question-title{
+            color: $CTitle;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1em;
+            padding: 0 auto;
+        }
+        .question-list{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            .list-item{
+                margin-bottom: 1em;
+                display: flex;
+                align-items: center;
+                height: 3em;
+                .item-checkbox{
+                    width: 1.5em;
+                    height: 1.5em;
+                    border: none;
+                    accent-color: $CChecked;
+                }
+                .item-text{
+                    color: $CTitle;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-left: 1em;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .content-result{
+        animation-name: fade-in;
+        animation-duration: 1.5s;
+        width: 90%;
+        background-image: linear-gradient(to bottom, $CQuestionBackground, $CHeaderBackground);
+        padding: 6em 0;
+        margin: 1em auto;
+        border-radius: 1em;
+        box-shadow: 0 0 15px black;
+
+        p,
+        .result-title{
+            margin: 2em 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .result-text{
+            font-size: 1.5rem;
+        }
+    }
+
+    .page-buttons{
+        background-color: $CButtonsBackground;
+        animation-name: fade-in;
+        animation-duration: 1.5s;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 1em;
+        box-shadow: 0 0 20px black;
+        padding: 2em 0;
+        display: flex;
+        justify-content: space-around;
+        button{
+            width: 6em;
+            height: 3em;
+            font-size: 1.5rem;
+            color:$CTitle;
+            background-color: $CHeaderBackground;
+            border-radius: 1em;
+            border: none;
+            box-shadow: 0 0 20px black;
+        }
+        button:disabled{
+            background-image: linear-gradient(to bottom right, black, grey,black, grey,black, grey,black, grey,black, grey,black, grey,black, grey,black, grey);
+            color: rgb(0, 0, 0);
+        }
+    }
+}

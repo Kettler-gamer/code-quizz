@@ -1,0 +1,18 @@
+@use "../abstract/vars" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-header{
+    background-color: $CHeaderBackground;
+    padding: 2em 0;
+    box-shadow: 0 0 20px black;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    .header-title{
+        color: $CTitle;
+        text-align: center;
+    }
+}
