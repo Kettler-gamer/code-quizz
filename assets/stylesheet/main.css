@@ -79,11 +79,53 @@
   margin-left: 1em;
   width: 80%;
 }
+.page-content .content-welcome {
+  opacity: 0;
+}
+.page-content .content-welcome .welcome-title {
+  color: #fff;
+  text-align: center;
+}
+.page-content .content-welcome .welcome-text {
+  display: block;
+  font-size: 1.3rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-content .content-welcome .welcome-text:nth-child(2) {
+  margin-top: 2em;
+}
+.page-content .content-welcome .welcome-text:nth-child(2),
+.page-content .content-welcome .welcome-text:nth-child(3) {
+  margin-bottom: 1em;
+}
+.page-content .content-welcome .welcome-text:nth-child(3),
+.page-content .content-welcome .welcome-text:nth-child(4) {
+  margin-top: 0em;
+}
+.page-content .content-welcome .welcome-text:nth-child(4) {
+  margin-bottom: 2em;
+}
+.page-content .content-welcome .welcome-start {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #efa927;
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0 0 20px black;
+}
 .page-content .content-result {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
+}
+.page-content .content-welcome,
+.page-content .content-result {
   width: 90%;
   background-image: linear-gradient(to bottom, #fa4040, #efa927);
   padding: 6em 0;
@@ -91,21 +133,29 @@
   border-radius: 1em;
   box-shadow: 0 0 15px black;
 }
+.page-content .content-welcome p,
+.page-content .content-welcome .result-title,
 .page-content .content-result p,
 .page-content .content-result .result-title {
   margin: 2em 0;
   text-align: center;
   color: #fff;
 }
+.page-content .content-welcome .result-text,
 .page-content .content-result .result-text {
   font-size: 1.5rem;
 }
-.page-content .page-buttons {
-  background-color: #929292;
+.page-content .fade-in-anim {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.page-content .page-buttons {
+  background-color: #929292;
+  opacity: 0;
   width: 90%;
   margin: 0 auto;
   border-radius: 1em;

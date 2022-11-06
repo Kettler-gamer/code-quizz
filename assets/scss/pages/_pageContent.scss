@@ -48,9 +48,53 @@
         }
     }
 
+    .content-welcome{
+        opacity: 0;
+        .welcome-title{
+            color: #fff;
+            text-align: center;
+        }
+        .welcome-text{
+            display: block;
+            font-size: 1.3rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .welcome-text:nth-child(2){
+            margin-top: 2em;
+        }
+        .welcome-text:nth-child(2),
+        .welcome-text:nth-child(3){
+            margin-bottom: 1em;
+        }
+        .welcome-text:nth-child(3),
+        .welcome-text:nth-child(4){
+            margin-top: 0em;
+        }
+        .welcome-text:nth-child(4){
+            margin-bottom: 2em;
+        }
+        .welcome-start{
+            display: block;
+            margin: 0 auto;
+            padding: 1em 2em;
+            font-size: 1.5rem;
+            color:$CTitle;
+            background-color: $CHeaderBackground;
+            border-radius: 1em;
+            border: none;
+            box-shadow: 0 0 20px black;
+        }
+    }
+
     .content-result{
         animation-name: fade-in;
         animation-duration: 1.5s;
+    }
+
+    .content-welcome,
+    .content-result{
         width: 90%;
         background-image: linear-gradient(to bottom, $CQuestionBackground, $CHeaderBackground);
         padding: 6em 0;
@@ -70,10 +114,15 @@
         }
     }
 
-    .page-buttons{
-        background-color: $CButtonsBackground;
+    .fade-in-anim{
         animation-name: fade-in;
         animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .page-buttons{
+        background-color: $CButtonsBackground;
+        opacity: 0;
         width: 90%;
         margin: 0 auto;
         border-radius: 1em;

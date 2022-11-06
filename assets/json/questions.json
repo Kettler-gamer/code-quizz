@@ -27,15 +27,15 @@
     "questions":["id = \"nytt värde\"", "id.setValue(\"nytt värde\")", "setValue(id, \"nytt värde\")", "Det går inte att ändra värdet"], 
     "correctAnswerIndex":3},
 
-    {"name":"Om man trycker på en knapp på en webbsida, trycker man då egentligen på knappen?", 
-    "questions":["Nej, man trycker på musknappen...Döööh", "eeehh.. ja?", "Jag förstår inte frågan", "Jag trodde detta handlade om programmering, inte filosofi"], 
-    "correctAnswerIndex":0},
-
-    {"name":"Vad står SEO för?", 
-    "questions":["Single entity object", "Search engine optimisation", "Start evaluation offer", "Speed engine orientation"], 
+    {"name":"Vad får man om man delar ett tal med 0?", 
+    "questions":["Error då det inte går att dela med 0", "Ett oändligt värde", "Det talet man delar med", "En trasig dator"], 
     "correctAnswerIndex":1},
 
-    {"name":"Om ett program kraschar, kommer det till himmelen?", 
+    {"name":"Om ett felmeddelande dyker upp och ingen ser det, har det då hänt?", 
+    "questions":["Ja", "Ja, om man blundat", "Nej, så länge man tömmer konsollen", "Nej"], 
+    "correctAnswerIndex":2},
+
+    {"name":"Om javascript kraschar, kommer det till himmelen?", 
     "questions":["Nej, gud kan inte koda", "Nej, himmelen saknar en nätverksport", "Ja, över \"molnet\"", "Ja, så länge man lägger till det som ett exception i ett catch block"], 
-    "correctAnswerIndex":3}
+    "correctAnswerIndex":1}
 ]

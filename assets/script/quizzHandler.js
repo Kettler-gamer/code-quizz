@@ -21,10 +21,23 @@ const main = (async () => {
       for (let i = 0; i < questionsArray.length; i++) {
         choises.push(-1);
       }
-      setQuestion();
+      onQuestionsLoaded();
     }
   );
 })();
+
+function onQuestionsLoaded() {
+  pageContent.children[0].classList.add("fade-in-anim");
+}
+
+function onStartClick() {
+  pageContent.children[0].style = "opacity: 0;";
+  pageContent.childNodes[1].remove();
+  pageContent.children[1].style = "";
+  pageContent.children[1].classList.add("fade-in-anim");
+
+  setQuestion();
+}
 
 function setQuestion() {
   const domParser = new DOMParser();
@@ -95,6 +108,7 @@ function seeResultPage() {
     }
   }
 
+  backButton.parentElement.classList.remove("fade-in-anim");
   backButton.parentElement.style = "opacity: 0;";
   backButton.disabled = true;
   nextButton.disabled = true;
@@ -117,6 +131,6 @@ function getResultText(res) {
     case res > 1:
       return "Väldigt dåligt!";
     case res === 0:
-      return "Fucking sämsta resultatet jag har behövt rätta i hela mitt dataliv! Tror du själv att du kan bli programmerare? Jävla nolla!";
+      return "Du ska kanske satsa på en karriär utanför IT?";
   }
 }
