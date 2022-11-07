@@ -16,3 +16,11 @@
         text-align: center;
     }
 }
+
+@media screen and (min-width:768px) {
+    .page-header{
+        margin: 0.5em auto 0 auto;
+        max-width: 900px;
+        border-radius: 50% 50% 10px 10px;
+    }
+}

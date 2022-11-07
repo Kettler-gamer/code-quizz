@@ -11,7 +11,7 @@ const choises = [];
 let questionIndex = 0;
 let template;
 let questionsArray;
-let correctAnswerIndex;
+let correctChoiceIndex;
 
 const main = (async () => {
   await Promise.all([questionTemplate, questionsJSON]).then(
@@ -44,15 +44,15 @@ function setQuestion() {
   const currentQuestion = questionsArray[questionIndex];
 
   let question = template;
-  correctAnswerIndex = currentQuestion.correctAnswerIndex;
+  correctChoiceIndex = currentQuestion.correctChoiceIndex;
 
-  question = question.replace("{{questionTitle}}", currentQuestion.name);
+  question = question.replace("{{questionTitle}}", currentQuestion.title);
   for (let i = 1; i <= 4; i++) {
     const checked = choises[questionIndex] === i - 1 ? " checked" : "";
     question = question.replace(`{{checked}}`, checked);
     question = question.replace(
       `{{answer${i}}}`,
-      currentQuestion.questions[i - 1] + checked
+      currentQuestion.choices[i - 1] + checked
     );
   }
 
@@ -103,7 +103,7 @@ function seeResultPage() {
   let res = 0;
 
   for (let i = 0; i < choises.length; i++) {
-    if (choises[i] === questionsArray[i].correctAnswerIndex) {
+    if (choises[i] === questionsArray[i].correctChoiceIndex) {
       res++;
     }
   }

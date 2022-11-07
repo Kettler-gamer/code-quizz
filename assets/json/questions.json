@@ -1,41 +1,41 @@
 [
-    {"name":"Vad för typ av värde kännetecknar en boolean?", 
-    "questions":["Siffror", "Text", "Sant/Falskt", "Decimaler"], 
-    "correctAnswerIndex":2},
+    {"title":"Vad för typ av värde kännetecknar en boolean?", 
+    "choices":["Siffror", "Text", "Sant/Falskt", "Decimaler"], 
+    "correctChoiceIndex":2},
 
-    {"name":"Vad gör denna kod?<br/>while(true){<br/><br/>}", 
-    "questions":["Spränger datorn", "Kör \"ingenting\" så länge som möjligt", "Hackar in i NASAs databas", "Knäcker folks lösenord"], 
-    "correctAnswerIndex":1},
+    {"title":"Vad gör denna kod?<br/>while(true){<br/><br/>}", 
+    "choices":["Spränger datorn", "Kör \"ingenting\" så länge som möjligt", "Hackar in i NASAs databas", "Knäcker folks lösenord"], 
+    "correctChoiceIndex":1},
 
-    {"name":"Vilket alternativ beskriver bäst en array?", 
-    "questions":["En krypteringsalgoritm", "En databas", "En operatör", "En lista"], 
-    "correctAnswerIndex":3},
+    {"title":"Vilket alternativ beskriver bäst en array?", 
+    "choices":["En krypteringsalgoritm", "En databas", "En operatör", "En lista"], 
+    "correctChoiceIndex":3},
 
-    {"name":"Vad blir \"1\" + \"1\"?", 
-    "questions":["2", "101", "11", "1"], 
-    "correctAnswerIndex":2},
+    {"title":"Vad blir \"1\" + \"1\"?", 
+    "choices":["2", "101", "11", "1"], 
+    "correctChoiceIndex":2},
 
-    {"name":"Vad kommer att stå i datorns konsoll efter att denna kod körts?<br/>let name;<br/>console.log(name);", 
-    "questions":["undefined", "name", "null", "10110101"], 
-    "correctAnswerIndex":0},
+    {"title":"Vad kommer att stå i datorns konsoll efter att denna kod körts?<br/>let name;<br/>console.log(name);", 
+    "choices":["undefined", "name", "null", "10110101"], 
+    "correctChoiceIndex":0},
 
-    {"name":"Vad kommer detta uttryck att ge för värde?<br/>\"1\" == true", 
-    "questions":["Error", "true", "false", "NaN"], 
-    "correctAnswerIndex":1},
+    {"title":"Vad kommer denna kod att ge för värde?<br/>\"1\" == true", 
+    "choices":["Error", "true", "false", "NaN"], 
+    "correctChoiceIndex":1},
 
-    {"name":"Hur kan man ändra denna variabelns värde?<br/>const id = 201345;", 
-    "questions":["id = \"nytt värde\"", "id.setValue(\"nytt värde\")", "setValue(id, \"nytt värde\")", "Det går inte att ändra värdet"], 
-    "correctAnswerIndex":3},
+    {"title":"Hur kan man ändra värdet på denna variabel?<br/>const id = 201345;", 
+    "choices":["id = \"nytt värde\"", "id.setValue(\"nytt värde\")", "setValue(id, \"nytt värde\")", "Det går inte att ändra värdet"], 
+    "correctChoiceIndex":3},
 
-    {"name":"Vad får man om man delar ett tal med 0?", 
-    "questions":["Error då det inte går att dela med 0", "Ett oändligt värde", "Det talet man delar med", "En trasig dator"], 
-    "correctAnswerIndex":1},
+    {"title":"Vad får man om man delar ett tal med 0?", 
+    "choices":["Error då det inte går att dela med 0", "Ett oändligt värde", "Det talet man delar med", "En trasig dator"], 
+    "correctChoiceIndex":1},
 
-    {"name":"Om ett felmeddelande dyker upp och ingen ser det, har det då hänt?", 
-    "questions":["Ja", "Ja, om man blundat", "Nej, så länge man tömmer konsollen", "Nej"], 
-    "correctAnswerIndex":2},
+    {"title":"Om ett felmeddelande dyker upp och ingen ser det, har det då hänt?", 
+    "choices":["Ja", "Ja, om man blundat", "Nej, så länge man tömmer konsollen", "Nej"], 
+    "correctChoiceIndex":2},
 
-    {"name":"Om javascript kraschar, kommer det till himmelen?", 
-    "questions":["Nej, gud kan inte koda", "Nej, himmelen saknar en nätverksport", "Ja, över \"molnet\"", "Ja, så länge man lägger till det som ett exception i ett catch block"], 
-    "correctAnswerIndex":1}
+    {"title":"Om javascript kraschar, kommer det till himmelen?", 
+    "choices":["Nej, gud kan inte koda", "Nej, himmelen saknar en nätverksport", "Ja, över \"molnet\"", "Ja, så länge man lägger till det som ett exception i ett catch block"], 
+    "correctChoiceIndex":1}
 ]

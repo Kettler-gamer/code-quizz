@@ -15,6 +15,13 @@
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    margin: 0.5em auto 0 auto;
+    max-width: 900px;
+    border-radius: 50% 50% 10px 10px;
+  }
+}
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -25,7 +32,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -117,6 +123,11 @@
   border-radius: 1em;
   border: none;
   box-shadow: 0 0 20px black;
+  transition: background-color 0.2s, color 0.2s;
+}
+.page-content .content-welcome .welcome-start:hover {
+  background-color: #fff;
+  color: #efa927;
 }
 .page-content .content-result {
   -webkit-animation-name: fade-in;
@@ -179,6 +190,12 @@
   color: rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 768px) {
+  .page-content {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

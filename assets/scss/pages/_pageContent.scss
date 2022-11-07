@@ -85,6 +85,12 @@
             border-radius: 1em;
             border: none;
             box-shadow: 0 0 20px black;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .welcome-start:hover{
+            background-color: #fff;
+            color: $CHeaderBackground;
         }
     }
 
@@ -144,5 +150,12 @@
             background-image: linear-gradient(to bottom right, black, grey,black, grey,black, grey,black, grey,black, grey,black, grey,black, grey,black, grey);
             color: rgb(0, 0, 0);
         }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .page-content{
+        margin: 0 auto;
+        max-width: 1000px;
     }
 }
