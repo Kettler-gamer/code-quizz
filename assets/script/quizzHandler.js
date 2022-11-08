@@ -116,6 +116,44 @@ function seeResultPage() {
   resultPage.hidden = false;
   resultPage.children[1].textContent = `${res}/${questionsArray.length}`;
   resultPage.children[2].textContent = getResultText(res);
+
+  const div = document.createElement("div");
+  resultPage.append(div);
+
+  for (let i = 0; i < questionsArray.length; i++) {
+    const container = document.createElement("section");
+    container.style =
+      "border-top: 2px solid black; border-radius:50%; border-bottom:2px solid black; padding: 4em 0";
+
+    const title = document.createElement("h2");
+    title.textContent = questionsArray[i].title;
+    while (title.textContent.includes("<br/>")) {
+      title.textContent = title.textContent.replace("<br/>", "\n");
+    }
+    title.className = "result-title";
+    title.style = "width: 75%; text-align: none; margin: 2em auto 0 auto;";
+
+    container.append(title);
+    for (let j = 0; j < questionsArray[i].choices.length; j++) {
+      const element = questionsArray[i].choices;
+      const correctIndex = questionsArray[i].correctChoiceIndex;
+      const alternative = document.createElement("p");
+      alternative.className = "result-text";
+      alternative.textContent = element[j];
+      alternative.style = "width:75%; margin: 1em auto";
+
+      if (choises[i] == j) {
+        alternative.style.color = "rgb(255,255,0)";
+      }
+
+      if (correctIndex == j) {
+        alternative.style.color = "rgb(0,255,0)";
+      }
+
+      container.append(alternative);
+    }
+    div.append(container);
+  }
 }
 
 function getResultText(res) {
@@ -128,7 +166,7 @@ function getResultText(res) {
       return "Helt okej!";
     case res > 3:
       return "Dåligt!";
-    case res > 1:
+    case res > 0:
       return "Väldigt dåligt!";
     case res === 0:
       return "Du ska kanske satsa på en karriär utanför IT?";

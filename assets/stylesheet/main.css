@@ -138,7 +138,7 @@
 .page-content .content-welcome,
 .page-content .content-result {
   width: 90%;
-  background-image: linear-gradient(to bottom, #fa4040, #efa927);
+  background-color: #fa4040;
   padding: 6em 0;
   margin: 1em auto;
   border-radius: 1em;

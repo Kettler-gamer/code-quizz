@@ -1,0 +1,5 @@
+[
+    {"title":"Vad för typ av värde kännetecknar en boolean?", 
+    "choices":["Siffror", "Text", "Sant/Falskt", "Decimaler"], 
+    "correctChoiceIndex":2}
+]
