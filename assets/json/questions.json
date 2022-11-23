@@ -31,11 +31,11 @@
     "choices":["Error då det inte går att dela med 0", "Ett oändligt värde", "Det talet man delar med", "En trasig dator"], 
     "correctChoiceIndex":1},
 
-    {"title":"Om ett felmeddelande dyker upp och ingen ser det, har det då hänt?", 
-    "choices":["Ja", "Ja, om man blundat", "Nej, så länge man tömmer konsollen", "Nej"], 
-    "correctChoiceIndex":2},
+    {"title":"Hur stor/liten kan en siffra vara i en variabel av typ Number?", 
+    "choices":["Hur stor/liten som helst", "+/- 9,007,199,254,740,991", "+- 7,256,734,168,446", "+/- 99,437,196,437,468,995"], 
+    "correctChoiceIndex":1},
 
-    {"title":"Om javascript kraschar, kommer det till himmelen?", 
-    "choices":["Nej, gud kan inte koda", "Nej, himmelen saknar en nätverksport", "Ja, över \"molnet\"", "Ja, så länge man lägger till det som ett exception i ett catch block"], 
+    {"title":"Vilket av alternativen är exempel på icke primitiva data typer?", 
+    "choices":["Strängar och siffror", "Objekt och arrays", "Booleans och siffror med decimaler", "Det finns inga icke primitiva data typer i javascript."], 
     "correctChoiceIndex":1}
 ]
